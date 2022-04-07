@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Practica1
 {
-    public class TestAbstract: AbstractExample
+    public static class Extension
     {
-        public TestAbstract(string key, dynamic value)
+        public static dynamic ShowArr(this Map<TestAbstract> arr)
         {
-            this.Key = key;
-            this.Value = value;
+            return arr[0];
         }
     }
 }

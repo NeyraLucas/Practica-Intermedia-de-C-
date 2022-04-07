@@ -8,17 +8,8 @@ namespace Practica1
 {
     public abstract class AbstractExample
     {
-      /*  public AbstractExample(string key, dynamic value) {
-        
-            this.Key = key;
-            this.Value = value;
-        
-        }
-      */
-     // public AbstractExample() { }
-        public static string Key { get ; set; }
-        public static dynamic Value { get; set; }
-
+        public  string Key { get ; set; }
+        public  dynamic Value { get; set; }
 
     }
 }

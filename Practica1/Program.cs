@@ -51,12 +51,25 @@ namespace Practica1 // Note: actual namespace depends on the project name.
 
             //4
             //Generics
-            GenericExample<AbstractExample> abs = new GenericExample<AbstractExample>();
-           // abs[1].Key = "mmm";
-            //abs[1].Value
-            //var generic = abs[0].Key;
+            Map<TestAbstract> abs = new Map<TestAbstract>();
+            //Se deben instanciar 
+            abs[0] = new TestAbstract("Perros",55);
+            abs[1] = new TestAbstract("Gatos", 3);
+            abs[2] = new TestAbstract("Tortugas", 15);
 
-           // Console.WriteLine($"Value: {generic}");
+            var generic = abs[0];
+
+            Console.WriteLine($"Key: {generic.Key}  Value: {generic.Value}" );
+
+            //Value exception
+            Console.WriteLine(abs.SearchByKey("Perrosa"));
+           // TestAbstract ex = abs.SearchByKey("Perros");
+            //Console.WriteLine(ex);
+
+            //5
+            //Extension Methods
+            Console.WriteLine("Extension:" +Extension.ShowArr(abs).Key);
+            
 
 
             //6
